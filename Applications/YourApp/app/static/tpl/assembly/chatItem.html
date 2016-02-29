@@ -1,0 +1,8 @@
+<div class='chatItem'>
+   <div class='chat-avatar ' ng-class="{leftFloat:message.other,rightFloat:!message.float}"><img src='/app/static/images/person.png' /></div>
+   <div class="chat-content-wrapper" ng-class="{leftFloat:message.other,rightFloat:!message.float}">
+   		<div class="top" ng-class="{true:'leftFloat',false:'rightFloat'}[message.other]"><label class='user' ng-class="{true:'other',false:'me'}[message.other]">{{message.user}}</label><label class='time'>{{message.time}}</label></div>
+   		<div class='message' ng-bind-html='message.content'>{{message.content}}</div>
+   		<div style="min-width: 150px;" ng-show='message.isFile'><div class='progress'><div class='covered' y-width ng-model="message.progress">  </div></div><label  class='up-percent'>{{message.progress}}</label></div>
+   </div>
+</div>

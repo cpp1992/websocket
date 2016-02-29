@@ -1,0 +1,536 @@
+/* *{margin:0px; padding:0px;}*/
+
+body{font-size:12px; font-family:"Microsoft Yahei","Calibri"; color:#555555;  }
+ul,ol,li{list-style-type:none;}
+a{text-decoration:none;}
+img{border:none;}
+html,body{
+    margin:0px;
+    height:100%;
+}
+body{
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+        
+    background:url(/app/static/images/login_bg.jpg);
+    background-size:cover;
+    overflow:hidden;
+
+    /*display: block;
+    padding-top: 0;
+    height: 100%;*/
+}
+.left-radius
+{
+    border-radius: 10px 0 0 0;
+}
+.right-radius
+{
+    border-radius: 0px 10px 0 0;
+}
+.content{
+    max-width: 1000px;
+    min-width: 800px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/* 导航栏 */
+.left-panel{
+    width: 260px;
+    height: 95%;
+    min-height: 600px;
+    border-radius: 5px;
+    background-color: #fff;
+
+    /*margin:40px 30px ;*/
+    float: left;                       /*important*/
+    z-index: 99;                       /* z-index: 99; */  
+    box-shadow: 0 5px 10px #7d7d7d;
+}
+.ng-profile{
+    background-color: #7d7d7d;
+    color: #fff;
+
+    width: 100%;
+   /* height: 90px; 
+    border-bottom: 1px solid #aaaaaa;*/
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -moz-border-top-right-radius: 5px;
+    -moz-border-top-left-radius: 5px; 
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px; 
+    
+}
+.img-circle{
+    width: 55px;
+    height: 55px;  
+    float: left;
+    margin: 12.5px 10px 0 14px;
+
+    border: 5px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    cursor:pointer;
+    
+}
+.info{
+    height: 80px;   
+    /*width: 200px;
+    line-height: 40px;*/
+}
+
+#userName{
+    padding: 20px 0 0 0;
+    font-variant:bold;
+    font-size: 16px;
+    color: #FFFFFF;
+    display: block;
+    overflow: hidden;
+    height: 25px; 
+}
+.list-inline{
+    padding-right: 5px;
+    padding-left: 5px;
+    list-style:none; 
+    display:block;
+    /*margin: -30px 0 ;*/
+}
+.list-inline li{
+    float:left;
+    padding: 0 5px ;
+    cursor:pointer;
+}
+
+/*选项按钮*/
+.ng-tab{
+    height: 30px;
+    background-color: #7d7d7d;
+    padding-top: 15px;
+}
+.tab-item{
+    float: left;
+    width: 33.334%;
+    position: relative;
+}
+.ng-tab .tab-item a {
+    display: block;
+    text-align: center;
+}
+.ng-tab .tab-item:after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    right: 0;
+    width: 0;
+    height: 20px;
+    border-right: 1px solid #aaaaaa;
+}
+.ng-tab .tab-item.tab-group:after {
+    border-right:0;
+}
+
+
+.icon {
+    display: inline-block;
+    width: 20px;
+    height: 18px;
+
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    text-align: center;
+}
+.icon.cur:after {
+    display: inline-block;
+    width: 20px;
+    height: 18px;
+    background: url(/app/static/images/main_11.png) no-repeat;
+    content: ' ';
+    position: absolute;
+    top: 30px;
+    left: 35px;
+}
+.icon-chat{
+    width: 16px;
+    height: 16px;
+    background: url(/app/static/images/icon_05.png) no-repeat ;
+}
+.icon-chat.cur {
+    background: url(/app/static/images/icon_06.png) no-repeat ;
+}
+.icon-list{
+    background-image: url(/app/static/images/icon_01.png);
+}
+.icon-team{
+    background-image: url(/app/static/images/icon_07.png);
+}
+
+
+/*联系人*/
+.ng-list{
+    height: 440px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.ng-list.hidden{
+    display: none !important;
+}
+.icon-loading.ng-hide{
+    display: none !important;
+}
+
+
+.chat-item {
+    overflow: hidden;
+    padding: 0;
+    margin:  10px 10px 5px;
+    border-bottom: 1px solid #d7d7d7;
+    cursor: pointer;
+    position: relative;
+}
+.person-avatar{
+    float:left;
+    margin-right: 10px;
+}
+.person-img{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+}
+.person-item{
+
+}
+
+/*搜索框*/
+.search-bar {
+    position: relative;
+    width: 250px;
+    margin: 0 auto;
+}
+.search-bar .web-search{
+    position: absolute; 
+    top:2px;
+    z-index: 101;
+    height:30px;
+    width: 30px;
+    background: url(/app/static/images/search.png);
+    vertical-align: middle;
+    display: inline-block;
+}
+.form-search{
+    width: 220px;
+    height: 30px;
+    line-height: 32px;
+    border: 0;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    background-color: rgba(226, 226, 226, 0.5); 
+    padding-left: 30px;
+    font-size: 12px;
+    border-bottom: 1px solid #d7d7d7;
+    outline: 0;
+}
+
+
+
+
+/*聊天面板*/
+.right-panel{
+    margin-left: 280px;
+    height: 600px;
+    position: relative;
+}
+/*工具栏*/
+.toolbar{
+    height: 40px;
+    width:420px;
+    border-radius: 5px;
+    background-color: #fff;
+    float: left;
+    box-shadow: 0 5px 10px #7d7d7d;
+}
+.tool-list{
+   padding: 0;
+   margin: 0;
+}
+.tool-list li{
+    float: left;
+    width: 16.666667%;
+    position: relative;
+    overflow: hidden;
+}
+.tool-item{
+    margin: 5px 0 5px ;
+    padding: 0 19px 0 19px;
+    border-right: 1px solid #d7d7d7;
+    display: inline-block;
+    cursor: pointer;
+}
+.tool-item .file-input
+{
+    cursor:pointer;
+    position:absolute;
+    width:60px;
+    height:60px;
+    top:-20px;
+    left:0;
+    opacity: 0;
+}
+.tool-item.record{
+    background: url(/app/static/images/record.png) no-repeat center;
+    width: 30px;
+    height: 30px;
+}
+.tool-item.video{
+    background: url(/app/static/images/video.png) no-repeat center;
+    width: 30px;
+    height: 30px;
+}
+.tool-item.file{
+    background: url(/app/static/images/file.png) no-repeat center;
+    width: 30px;
+    height: 30px;
+}
+.tool-item.picture{
+    background: url(/app/static/images/picture.png) no-repeat center;
+    width: 30px;
+    height: 30px;
+}
+.tool-item.email{
+    background: url(/app/static/images/email.png) no-repeat center;
+    width: 30px;
+    height: 30px;
+}
+.tool-item.warn{
+    background: url(/app/static/images/warn.png) no-repeat center;
+    width: 30px;
+    height: 30px;
+    border-right: 0;
+}
+
+
+.boxing{
+    height: 40px;
+    width:200px;
+    border-radius: 5px;
+    background-color: #fff;
+    margin: 20px 0 10px 520px;
+    box-shadow: 0 5px 10px #7d7d7d;
+}
+.setting{
+    width:95px;
+    height: 40px;
+    float: left;
+    text-align: center;
+    padding-top:5px;
+}
+.setting img{
+    width:30px;
+    height:30px;
+}
+.exit{
+    width:105px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #c9452b;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    line-height: 40px;
+    display: inline-block;
+}
+
+/*聊天界面*/
+.chat-box{
+    height: 400px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px #7d7d7d;
+}
+.person-info{ 
+    line-height:30px;
+    width: 100%;
+    
+    float: left;
+    text-align: center;
+    font-size: 15px;
+}
+#nickName{
+
+    position: relative;
+    padding: 8px 0;
+    margin: 0 19px;
+
+}
+.head-img{
+    z-index: 100;
+    position: absolute;
+    top:65px;
+    right: 25px;
+    width:20px;
+    height:20px;
+    cursor:pointer;
+}
+.chat-content{
+    padding: 0 19px;
+    width: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 340px;
+}
+
+/*发送消息界面*/
+.chat-sender{
+    height: 140px;
+    border-radius: 5px;
+    background-color: #fff;
+    margin: 10px auto;
+    box-shadow: 0 5px 10px #7d7d7d;
+}
+.edit-area{
+    height: 5em;
+    width: 600px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 20px 20px 0 20px;
+    outline: 0;
+    border: none;
+    font-size: 14px;
+    margin: 5px 0 0 5px;
+    font-family: inherit;
+    white-space: pre-wrap;
+    word-break: initial;
+}
+.send-action{
+    text-align: right;
+    
+    margin: 0 10px;
+}
+.desc{
+    color: #888;
+    font-size: 12px;
+    margin-left: 10px;
+    margin-right: 7px
+}
+.btn-send{
+    text-decoration: none;
+    background-color: #d77b31;
+    color: #fff;
+
+    display: inline-block;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    padding: 3px 20px;
+    font-size: 14px;
+    margin: 10px 10px;
+}
+
+
+
+
+::-webkit-scrollbar {
+    width: 6px;
+    background-color: transparent;
+    border-radius: 3px; 
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    background-color: #c3c3c3;
+}
+
+#state
+{
+    color:#ccc;
+    font-size: 0.8em;
+    margin-left:10px;
+}
+
+#plugin
+{
+    width:500px;
+    height:300px;
+    float:left;
+}
+
+
+/*好友添加窗口*/
+#addWindow
+{
+    width:500px;
+    height: 100px;
+    position: fixed;
+    z-index: 1000;
+    background: #fff;
+    left:50%;
+    top:50%;
+    margin-left:-250px;
+    margin-top: -50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px #222;
+}
+#addWindow ul
+{
+    padding:0;
+    width: 100%;
+    height:30px;
+    margin:0;
+}
+#addWindow ul li
+{
+    width: 50%;
+    float:left;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    cursor: pointer;
+    margin:0;
+}
+#addWindow ul .inActive
+{
+    background: #bbb;
+    color:#555;
+}
+#addWindow .addInput
+{
+    margin-left:130px;
+}
+#addWindow .addBu
+{
+    background: #888;
+    color: #fff;
+    margin-left: 10px;
+    border:none;
+    cursor: pointer;
+    width: 50px;
+    height: 20px;
+    font-family: "Microsoft Yahei";
+}
+#addWindow .addBody
+{
+    margin-top: 25px;
+}
+#addWindow #addClose
+{
+    width:20px;
+    height: 20px;
+    border-radius: 30px;
+    position: absolute;
+    right:0;
+    background: #c9452b;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+    color: #fff;
+}
+#addWindow #addResult
+{
+    margin-left:200px;
+    color:#336699;
+}

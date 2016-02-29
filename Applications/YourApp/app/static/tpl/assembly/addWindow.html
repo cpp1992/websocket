@@ -1,0 +1,10 @@
+<div id="addWindow" ng-controller="addController">
+    <label id="addClose" ng-click="addOpera=!addOpera">X</label>
+	<ul>
+		<li ng-class="{inActive:friend}" ng-click="friend=false" class="left-radius">添加好友</li>
+		<li ng-class="{inActive:!friend}" ng-click="friend=true" class="right-radius">添加群组</li>
+	</ul>
+	<div ng-show="!friend" class="addBody"><input type="text" ng-model="addFriendId" class='addInput' id="friendId" /><button class="addBu" ng-click="addFriend()">添加</button></div>
+	<div ng-show="friend" class="addBody"><input type="text" ng-model="addGroupId" class="addInput" id="groupId"/><button class="addBu" ng-click="addGroup()">添加</button></div>
+	<div id="addResult">{{addResult}}</div>
+</div>

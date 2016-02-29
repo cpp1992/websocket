@@ -1,0 +1,85 @@
+.rightFloat
+{
+	float: right;
+}
+.leftFloat
+{
+	float:left;
+}
+.chatItem
+{
+	width:100%;
+	min-height: 50px;
+	overflow: hidden;
+	float:left;
+	margin-top: 20px;
+}
+.chatItem .chat-content-wrapper
+{
+	width:auto;
+	max-width: 70%;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+.chatItem .chat-avatar
+{
+	width: 50px;
+}
+.chatItem .chat-avatar img
+{
+	width: 100%;
+	border-radius: 50px;
+}
+.chatItem .chat-content-wrapper .top
+{
+}
+
+.chatItem .chat-content-wrapper .top .user
+{
+	margin-right: 10px;
+	margin-left: 10px;
+}
+.chatItem .chat-content-wrapper .top .time
+{
+	color:#aaa;
+}
+.chatItem .chat-content-wrapper .top .me
+{
+	color:#99CC99;
+}
+.chatItem .chat-content-wrapper .top .other
+{
+	color:#666600;
+}
+.chatItem .chat-content-wrapper .progress
+{
+	width:75%;
+	height:2px;
+	background: #ccc;
+	border: 1px solid #ddd;
+	display: inline-block;
+	border-radius: 2px;
+	float:left;
+	margin-top: 7px;
+	margin-left:8px;
+}
+.chatItem .chat-content-wrapper .progress .covered
+{
+	width:0%;
+	height:2px;
+	background: #356;
+}
+.chatItem .chat-content-wrapper .up-percent
+{
+	float:left;
+	color:#aaa;
+	font-size: 1px;
+}
+.chatItem .chat-content-wrapper .message
+{
+	word-break: break-all;
+	word-wrap: break-word;
+	margin-top: 25px;
+	line-height: 25px;
+	margin-left: 10px;
+}

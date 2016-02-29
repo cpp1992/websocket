@@ -1,0 +1,180 @@
+html,body{
+    margin:0px;
+    height:100%;
+}
+body{
+	width:100%;
+	height:100%;
+	margin:0;
+	padding:0;
+		
+	background:url(../images/login_bg.jpg);
+	background-size:cover;
+	overflow:hidden;
+}
+.page{
+}
+
+.login-content{
+	width:400px;
+    height:284px;
+	background:#fff;
+    border-radius:10px;
+
+    margin: 150px auto;
+
+	text-align: center;
+}
+.login-content2{
+	width:400px;
+    height:304px;
+	background:#fff;
+    border-radius:10px;
+
+    margin: 150px auto;
+
+	text-align: center;
+}
+.login-font{
+	font-size: 25px;
+	color:#fff;
+	font-variant: bold;
+	font-family: consolas;	
+	height:50px; 
+	line-height:50px;
+	background:#7d7d7d;
+
+    text-align:center;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+
+}
+
+
+.login-info{
+	width:320px; 
+	height:50px;
+	margin-left:auto;
+	margin-right:auto; 
+	background:#ffffff;
+
+	margin-top:20px;
+	border:1px solid #ddd;
+	
+}
+
+.login-info span.user{
+	float:left;
+	width:50px; 
+	height:50px;
+	
+	background:url(../images/login_01.gif) no-repeat center center; 
+	border-right:1px solid #a9a9a9
+}
+.login-info span.pwd{
+	float:left;
+	width:50px; 
+	height:50px;
+
+	background:url(../images/login_02.gif) no-repeat center center; 
+	border-right:1px solid #a9a9a9
+}
+.login-text{
+	width:257px; 
+	height:50px;
+	line-height: 50px;
+	background:#ffffff;
+	border:none;
+	margin:0;
+	padding:0;
+    padding-left:10px;
+    outline: none;
+}
+.login-text:active{
+   border: none;
+}
+.login-btn{
+	
+	height:80px; 
+	line-height:50px;
+	background:#edede4;
+	margin-top:20px;
+
+	border-bottom-right-radius:10px;
+    border-bottom-left-radius:10px;
+}
+.login-submit{
+
+    font-size: 25px;
+	color:#fff;
+	font-variant: bold;
+	font-family: consolas;
+	text-align:center;
+
+	height:40px;	
+	width:200px;
+	background:#fb5c5c;
+	border:none;	
+
+	display:inline-block;
+    float:left;
+    margin-top:20px;
+    margin-left:20px;
+
+	border-bottom:3px solid #7d7d7d;*
+	border-bottom:none;
+
+	cursor:pointer;
+
+}
+.login-submit:hover
+{
+	background: #fb4949;
+}
+.login-submit2{
+
+    font-size: 25px;
+	color:#fff;
+	font-variant: bold;
+	font-family: consolas;
+	text-align:center;
+
+	height:40px;	
+	width:300px;
+	background:#99CC66;
+	border:none;	
+
+	display:inline-block;
+    float:left;
+    margin-top:20px;
+    margin-left:50px;
+
+	border-bottom:3px solid #7d7d7d;*
+	border-bottom:none;
+
+	cursor:pointer;
+
+}
+.login-submit2:hover
+{
+	background: #99CC33;
+}
+#regUrl
+{
+	float:left;
+	font-size: 13px;
+	height:40px;
+	line-height: 40px;
+	width: 160px;
+	margin-top: 19px;
+	text-decoration: none;
+	color:#999;
+}
+#regUrl:hover
+{
+	color:#336699;
+}
+.red
+{
+	border:1px solid red;
+}

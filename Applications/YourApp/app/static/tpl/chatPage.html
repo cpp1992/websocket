@@ -1,0 +1,16 @@
+		<!--聊天界面-->
+		<div class="chat-box">	
+			<div class="person-info" id="chat-title">
+				<div id="nickName">&nbsp;未选择联系人</div>
+				<img src="/app/static/images/head_img.png" class="head-img" id="head-img"/>
+			</div>
+			<!-- 聊天记录 -->
+			<div class="chat-content" id="chat-content">
+			   <chat-item ng-model="messages" ng-repeat="message in messages"></chat-item>
+			</div>			
+
+
+
+	    </div>
+	    <!--消息输入-->
+	    <input-box></input-box>

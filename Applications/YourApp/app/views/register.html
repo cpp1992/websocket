@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link href="/app/static/css/login.css" rel="stylesheet" type="text/css" />
+<script src='/app/static/js/common/angular.min.js'></script>
+</head>
+
+<body>
+    <div class="page" >
+
+			<!--login box begin-->
+			<div class="login-content2">
+
+
+				<!--login form-->
+				<div class="login-font">SIGN UP</div>
+
+				<form  id="login-form" name="reg_form" ng-app='reg' ng-controller='do_reg' ng-submit="reg()">
+
+					<div class="login-info" ng-class="{'red':reg_form.username.$dirty && reg_form.username.$invalid}">
+						<span class="user">&nbsp;</span>							
+						<input type="text" name="username" id="username" class="login-text" value="" maxlength="15" tabindex="1" placeholder="Username" ng-model='user.name' required ng-pattern="/^[0-9a-zA-Z]{4,15}$/" ng-trim 
+						
+						/>
+					</div>
+
+					<div class="login-info" ng-class="{'red':reg_form.password.$dirty && reg_form.password.$invalid}">
+						<span class="pwd">&nbsp;</span>							
+						<input type="password" name="password" id="password" class="login-text" maxlength="28" tabindex="2" ng-trim autocomplete="off" placeholder="Password" ng-model='user.pwd' ng-pattern="/^[0-9a-zA-Z]{6,15}$/"/>
+							
+					</div>
+
+					<div class="login-info" ng-class="{'red':(user.pwd!=user.re_pwd) && reg_form.re_password.$dirty}" >
+						<span class="pwd">&nbsp;</span>							
+						<input type="password" name="re_password" id="re_password" class="login-text" maxlength="28" tabindex="2" ng-trim autocomplete="off" placeholder="Repeat password" 
+						ng-model='user.re_pwd' ng-pattern="/^[0-9a-zA-Z]{6,15}$/"/>
+							
+					</div>
+
+					<div class="login-btn">
+						<button type="submit" id="submit" class="login-submit2" value="submit" tabindex="3" >SIGN UP</button>
+					</div>
+				</form>
+
+	        </div>
+
+	</div>
+
+
+</body>
+<script src='/app/static/js/register.js'></script>
+</html>

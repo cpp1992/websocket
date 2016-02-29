@@ -1,0 +1,26 @@
+		<div class="toolbar" ng-controller="fileController">
+			<ul class="tool-list">
+		        <li><a href="javascript:" title="" class="tool-item record" id="record"></a>
+		                </li>
+		        <li><a href="javascript:" title="" class="tool-item video" id="video"></a>
+		                </li>		        
+		        <li>
+		            <i title="发送文件" class="tool-item file" id="file">
+		            <form>
+		        	  <input onChange="angular.element(this).scope().uploadFile(this,'file')" ng-model="files" type="file" id="fileInput" class='file-input' style=""/>
+		        	 </form>
+		            </i>
+		        </li>
+		        <li>
+		              <i href="javascript:" title="发送图片" class="tool-item picture" id="picture">
+		        	 <form>
+		        	  <input onChange="angular.element(this).scope().uploadFile(this,'img')" ng-model="imgs" type="file" id="imgInput" class='file-input' style=""/>
+		        	 </form>
+		             </i>
+		        </li>
+		        <li><a href="javascript:" title="" class="tool-item email" id="email"></a>
+		                </li>
+		        <li><a href="#" title=""  class="tool-item warn" id="warn"></a>
+		                </li>
+		    </ul>
+		</div>

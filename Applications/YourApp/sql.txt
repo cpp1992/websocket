@@ -1,0 +1,33 @@
+create table user(
+id bigint primary key not null auto_increment,
+username varchar(40) not null,
+password varchar(63) not null,
+status  tinyint not null default 0,
+type    varchar(24) not null default 'chat',
+date   TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+ping   TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+)AUTO_INCREMENT = 10000;
+
+create table singleChat(
+id bigint primary key not null auto_increment,
+recipientId bigint not null,
+senderId  bigint not null,
+content varchar(255) not null,
+isRead tinyint not null default 0,
+date   TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+create table notice(
+id bigint primary key not null auto_increment,
+userid bigint not null,
+content varchar(255) not null,
+type smallint not null,  ####0.system 1.friend  2.etc...
+readed tinyint not null default 0,
+date   TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+create table friends(
+id bigint primary key not null auto_increment,
+userid bigint not null,
+friendid bigint not null
+);
